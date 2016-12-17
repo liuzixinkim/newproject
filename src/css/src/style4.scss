@@ -49,7 +49,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../images/item2bg.png) no-repeat;
+  background: url(../images/item1bg.jpg) no-repeat;
   background-size:100% 100%; }
 
 .content {
@@ -84,7 +84,7 @@ body {
   z-index: 10;
   top: 0;
   left: 0;
-  background: url(../images/item2bg.png) no-repeat;
+  background: url(../images/item1bg.jpg) no-repeat;
   background-size:100% 100%;
   -webkit-transition: all .8s ease;
   transition: all 0.8s ease; }
@@ -136,16 +136,6 @@ body {
 .two_bg {
   z-index: 1; }
 
-.content1,.content2,.content3, .content4, .content5 {
-	height:100%;
-  background: url(../images/item1bg.png) no-repeat;
-  background-size:100% 100%;
-}
-.content2,.content3, .content4, .content5 {
-	height:100%;
-  background: url(../images/item2bg.png) no-repeat;
-  background-size:100% 100%;
-}
 
 .page img {
   position: absolute; }
@@ -153,16 +143,57 @@ body {
   position: absolute;	
 }
 
+.array{
+	animation: arrowUp 3s infinite ease-in;
+	-webkit-animation: arrowUp 2s infinite ease-in;
+}
+@keyframes arrowUp {
+    0% {
+        transform:translateY(42px);
+        opacity: 0;
+    }
+    60% {
+        transform:translateY(12px);
+        opacity: 1;
+    }
+    100% {
+        transform:translateY(0px);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes arrowUp {
+    0% {
+        -webkit-transform:translateY(20px);
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform:translateY(12px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform:translateY(0px);
+        opacity: 0;
+    }
+}
 
 
 
 /************************************** 翻页开始 ****************************/
+.content1{
+	height:100%;
+	background: url(../images/item1bg.jpg) no-repeat;
+	background-size:100% 100%;
+}
+.logo{
+	left:24px;
+	top:30px;
+}
 //房子
 .one_house {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("../images/item1house.png") no-repeat;
+  background: url(../images/item1house.png) no-repeat;
   height:1012px;
   width:1080px;
   z-index: 2; 
@@ -212,31 +243,24 @@ body {
 }
 
 /************************************** 第二页 ****************************/
+.content2 {
+	height:100%;
+  background: url(../images/item2bg.jpg) no-repeat;
+  background-size:100% 100%;
+}
 //地图
 .two_map{
 	width:1080px;
-	height:1140px;
+	height:1578px;
 	background:url(../images/two_map.png) no-repeat;
 	background-size:100% 100%;
 	position:absolute;
-	top:470px;
+	bottom:0px;
 	left:0px;
 	opacity:0;
-	-webkit-transform:scale(1);
-	span{
-		width:15px;
-		height:15px;
-		background:#fff;
-		border-radius:10px solid #fff;
-		position:absolute;
-		border-radius:50%;
-		opacity:0.4;
-	}
-	span:nth-child(1){
-		right:330px;
-		top:380px;
-	}
-
+	transform:scale(1);
+	-moz-transform:scale(1); 
+	-webkit-transform:scale(1); 
 }
 .two_map.move_act{
 	animation: narrow 0.8s 1s ease-in-out forwards;
@@ -313,7 +337,8 @@ body {
 
 /************************************** 第三页 ****************************/
 .content3{
-	background:url(../images/item1bg.png) no-repeat;
+	height:100%;
+	background:url(../images/item1bg.jpg) no-repeat;
 	background-size:100% 100%;
 }
 //深色背景
@@ -326,9 +351,9 @@ body {
 	overflow:hidden;
 }
 .three_bg.move_act{
-	animation: height_show 1s .5s ease-in-out forwards;
-	-moz-animation: height_show 1s .5s ease-in-out forwards;
-	-webkit-animation: height_show 1s .5s ease-in-out forwards;
+	animation: height_show 0.8s .5s ease-in-out forwards;
+	-moz-animation: height_show 0.8s .5s ease-in-out forwards;
+	-webkit-animation: height_show 0.8s .5s ease-in-out forwards;
 }
 .three_bg.end_act{
 	height:1920px;
@@ -393,13 +418,54 @@ body {
 .three_money2.animated{
 	animation-delay:3.5s;  
 }
-.three_money3{
+// .three_money3{
+// 	bottom:470px;
+// 	right:268px;
+// }
+// .three_money3.animated{
+// 	animation-delay:3.7s;  
+// }
+.three_money3_5{
 	bottom:470px;
 	right:268px;
 }
-.three_money3.animated{
+.three_money3_4{
+	bottom:490px;
+	right:268px;
+}
+.three_money3_3{
+	bottom:510px;
+	right:268px;
+}
+.three_money3_2{
+	bottom:530px;
+	right:268px;
+}
+.three_money3_1{
+	bottom:550px;
+	right:268px;
+}
+.three_money3_5.animated{
+	animation-duration: 0.15s;
 	animation-delay:3.7s;  
 }
+.three_money3_4.animated{
+	animation-duration: 0.15s;
+	animation-delay:3.9s;  
+}
+.three_money3_3.animated{
+	animation-duration: 0.15s;
+	animation-delay:4.1s;  
+}
+.three_money3_2.animated{
+	animation-duration: 0.15s;
+	animation-delay:4.3s;  
+}
+.three_money3_1.animated{
+	animation-duration: 0.15s;
+	animation-delay:4.5s;  
+}
+
 .three_box{
 	bottom:836px;
 	right:700px;
@@ -511,7 +577,7 @@ body {
 /************************************** 第四页 ****************************/
 .content4,.content5,.content6,.content7,.content8,.content9,.content10{
 	height:100%;
-	background:url(../images/item1bg.png) no-repeat;
+	background:url(../images/item1bg.jpg) no-repeat;
 	background-size:100% 100%;
 }
 .four_module1{
@@ -748,7 +814,7 @@ body {
 	right:27px;
 }
 .five_tool2.animated{
-	animation-delay: 8.5s; 
+	animation-delay: 8.3s; 
 }
 /************************************** 第六页 ****************************/
 
@@ -757,34 +823,35 @@ body {
 	left:128px;
 }
 .six_title.animated{
-	animation-delay: 1.5s; 
+	animation-delay: 1.4s; 
 }
 .six_zgfw{
 	left:42px;
 	top:654px;
 }
 .six_zgfw.animated{
-	animation-delay: 2s; 
+	animation-delay: 2.2s; 
 }
 .six_text{
 	right:246px;
 	top:916px;
 }
 .six_text.animated{
-	animation-delay: 2.5s; 
+	animation-delay: 2.9s; 
 }
 .six_table{
 	bottom:115px;
 	left:26px;
 }
 .six_table.animated{
-	animation-delay: 3s; 
+	animation-delay: 3.5s; 
 }
 .six_build{
 	bottom:164px;
 	left:120px;
 }
 .six_build.animated{
+	animation-duration: 0.7s;
 	animation-delay: 4s; 
 }
 .six_preson{
@@ -792,14 +859,16 @@ body {
 	left:524px;
 }
 .six_preson.animated{
-	animation-delay: 5s; 
+	animation-duration: 0.8s;
+	animation-delay: 4.8s; 
 }
 .six_line{
 	top:800px;
 	left:265px;
 }
 .six_line.animated{
-	animation-delay: 6s; 
+	animation-duration: 0.8s;
+	animation-delay: 5.6s; 
 }
 
 /************************************** 第七页 ****************************/
@@ -809,7 +878,7 @@ body {
 	right:36px;
 }
 .seven_gzly.animated{
-	animation-delay: 1s; 
+	animation-delay: 1.2s; 
 }
 .seven_text{
 	top:194px;
@@ -1166,7 +1235,7 @@ body {
 /************************************** 第十一页 ****************************/
 .content11{
 	height:100%;
-	background:url(../images/item11bg.png) no-repeat;
+	background:url(../images/item1bg.jpg) no-repeat;
 	background-size:100% 100%;
 }
 .eleven_gz{
@@ -1197,7 +1266,11 @@ body {
 .eleven_text3.animated{
 	animation-delay: 4s; 
 }
-
+.logo2{
+	bottom:50px;
+	left:50%;
+	transform:translate(-50%);
+}
 
 
 

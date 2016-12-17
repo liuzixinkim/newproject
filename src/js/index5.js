@@ -213,7 +213,7 @@ $('.animate_obj').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimat
     $(this).removeClass('animated');
     if($(this).hasClass('five_money'))
     {
-        $(this).removeClass('fadeIn').addClass('animated bounce').css({
+        $(this).removeClass('fadeIn').addClass('animated pulse').css({
             'animation-duration': '2s',
             'animation-delay':'0s',
             'animation-iteration-count':'infinite'
