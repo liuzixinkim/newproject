@@ -1,0 +1,48 @@
+@import "rem";
+header{
+  position: relative;
+
+  height:px2rem(150);
+  padding-left:px2rem(40);
+  padding-right:px2rem(40);
+
+  text-align:center;
+  font-size:px2rem(51);
+  line-height:px2rem(150);
+
+  background: #fff;
+
+  border-bottom: 1px solid #c3c3c3;
+  .headerAllowLeft{ 
+     position: absolute;
+
+     display: block; 
+     width:px2rem(54);
+     height:px2rem(150);
+
+     color: #333333;
+
+     background:url(http://static.jiaju.com/jiaju/com/touch_static/images/arrow-left.png) no-repeat left center;
+     background-size:px2rem(26) px2rem(52);
+  }
+  .headerAllowRight{
+    position: absolute;
+    right: px2rem(40);
+    top: 0;
+
+    display: block;
+    height:px2rem(150);
+
+    font-Size:px2rem(40);
+    color: #666666;
+  }
+  .isHeaderShare{
+    width:px2rem(46);
+    height:px2rem(60);
+    position:absolute;
+    right:px2rem(40);
+    top:50%;
+    margin-top:px2rem(-30);
+    
+  }
+}

@@ -1,0 +1,54 @@
+// @function px2rem( $px ){
+//   @return $px*320/$designWidth/20 + rem;
+// }
+// $designWidth: 1080;
+
+*{
+	margin:0;
+	padding:0;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+}
+.swiper-container,.swiper-wrapper,.swiper-slide{
+	width:100%;
+	height:100%;
+}
+.swiper-slide{
+	position: relative;
+}
+.page1{
+	background:url(../images/item1bg.png) no-repeat;
+	background-size: 100% 100%;
+	.one_house{
+		width:1080px;
+		height:1012px;
+		position:absolute;
+		left:0;
+		bottom:0;
+	}
+	// .one_gz{
+	// 	width:px2rem(840);
+	// 	height:px2rem(1163);
+	// 	// position:absolute;
+	// 	// right:0;
+	// 	// bottom:0;
+	// }
+	// .one_flag{
+	// 	width:px2rem(1080);
+	// 	height:px2rem(1083);
+	// 	// position:absolute;
+	// 	// left:0;
+	// 	// bottom:px2rem(700);
+	// }
+}
+
+
+.page2{
+	background:#ff0;
+}
+.page3{
+	background:#eee;
+}

@@ -1,0 +1,22 @@
+a{
+    text-decoration: none;
+    &:active{
+        text-decoration: none;
+    }
+}
+
+$designWidth: 1080 !default;
+$baseImgURL: "http://static.jiaju.com/jiaju/com/touch_static/images/";
+@function px2rem( $px ){
+  @return $px*320/$designWidth/20 + rem;
+}
+
+@mixin clearfix(){
+    zoom: 1;
+    &:after{
+        display: block;
+        content: "\20";
+        clear: both;
+        height: 0;
+    }
+}

@@ -1,0 +1,1 @@
+window.onload=window.onresize=function(){pageResponse({selectors:".pageContainer",mode:"contain",width:"1080",height:"1920"})};var mySwiper=new Swiper(".swiper-container",{onInit:function(n){swiperAnimateCache(n),swiperAnimate(n)},onSlideChangeEnd:function(n){swiperAnimate(n)}});
